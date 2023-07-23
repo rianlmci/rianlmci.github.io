@@ -1,0 +1,163 @@
+@font-face {
+  font-family: Cinzel;
+  src: url("../fonts/Cinzel-VariableFont_wght.ttf");
+}
+
+@font-face {	
+  font-family: FiraSans-Regular;
+  src: url("../fonts/FiraSans-Regular.ttf");
+}
+
+body, html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body{
+	background-image: linear-gradient(black, black, black);	
+}
+body {
+	font-family: FiraSans-Regular;
+	color: #FFF;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: Cinzel;
+	color: #735F3A;
+	font-size: 0.8vw;
+	/* From: https://fossheim.io/writing/posts/css-text-gradient/ */
+	background-color: #735F3A;
+	background-image: linear-gradient(#A5987F, #735F3A);
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+}
+
+.mainGoldOutlineBox{
+	margin: auto;
+	display: flex;
+	max-width: 50vw;
+	min-width: 50vw;
+	max-height: 95vh;
+	min-height: 95vh;
+	background-color: #303030;
+	border-style: solid;
+	border-width: 5px; 
+	border-color: #735F3A;
+	border-radius: 20px;
+}
+
+.mainSheet {
+	display: flex;
+}
+
+.col{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 33%;
+	padding: 2%;
+}
+
+.col > * {
+	flex: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.blackBox{
+	text-align: center;	
+	min-width: 100%;
+	max-width: 100%;
+	background-color: #242424;
+	border-style: solid;
+	border-width: 1px; 
+	border-color: black;
+	border-radius: 20px;
+    overflow: hidden;
+	word-wrap: break-word;
+}
+.blackBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+
+#character-picture{
+	display: flex;
+	margin: auto;
+	border-style: solid;
+	border-width: 5px; 
+	border-color: #735F3A;
+	max-width: 	85%;
+	max-height: 85%;
+	border-radius: 20px;
+	margin: 1%;
+}
+
+.location-picture{
+	display: flex;
+	border-style: solid;
+	border-width: 5px; 
+	border-color: #735F3A;
+	max-width: 100%;
+	min-width: 100%;
+	border-radius: 20px;
+}
+#character-name > * {
+	font-size: 0.9vw;	
+}
+
+#title > * {
+	font-size: 0.9vw;
+}
+
+#character-stats{
+	min-height: 40%;	
+}
+
+#backstory{
+	min-height: 30%;	
+}
+
+#backstory > *{
+	padding: 5%;
+}	
+
+#alignment{
+
+}	
+
+#job-and-class{
+
+}
+
+#ibf-parent-box{
+	min-height: 25%;
+}
+
+
+#credit-parent-box{
+	min-height: 22%;
+}
+
+.left{
+	width: 100%;
+	text-align: left;		
+}
+
+.right{
+	width: 100%;
+	text-align: right;		
+}	
+
+.center{
+	width: 100%;
+	text-align: center;		
+}	

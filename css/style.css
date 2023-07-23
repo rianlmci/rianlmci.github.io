@@ -1,0 +1,130 @@
+:root {
+  --navBoxAccent: Gray;
+  --navBoxColor: Black;
+  --backgroundSize: 300px;
+}
+
+@font-face { 
+  font-family: 'Roboto'; 
+  src: url('https://fonts.googleapis.com/css2?family=Roboto'); 
+}
+
+@font-face {   
+  font-family: 'EB Garamond'; 
+  src: url('fonts.googleapis.com/css?family=EB+Garamond'); 
+} 
+ 
+body,html {
+	margin:0;
+	padding:0;
+	height: 100 vh;
+	width: 100 vw;
+	font-family: 'EB Garamond', serif;
+	background:repeat;
+	background-image: url("../img/CrystalWhite.png");
+	background-blend-mode: screen;
+	background-color: var(--navBoxAccent);
+	background-size: var(--backgroundSize) var(--backgroundSize);
+	animation: scrollingBackground 15s linear infinite;	
+}
+
+@keyframes scrollingBackground {
+	from	{ background-position: 0 0; }
+	to		{ background-position: var(--backgroundSize) var(--backgroundSize); }
+}
+
+.navContainer {
+	width: 98%;
+	color: white;
+	margin-top: 0px;
+	overflow: hidden;
+}
+
+
+.navContainer li {
+	margin-left: auto; 
+	list-style: none;
+	padding: 20px;
+	float: right;	
+	background-color: var(--navBoxColor);
+	display: float-right;
+	border-radius: 50px
+}
+
+.navContainer li a{
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 2vh;
+}
+
+.navContainer li ul, li.webMenu ul li{
+	display: none;	
+}
+
+.navContainer li:hover ul, li.webMenu:hover ul li{
+	display: flex;
+	flex-direction: column;
+}
+
+.navContainer li:hover ul li:hover{
+	background-color: var(--navBoxAccent);
+}
+
+.webMenu li, .webMenu ul, .webMenu ul li{
+	border-radius: 50px;
+	background-color: var(--navBoxAccent);
+}
+
+.mediaIcon{
+	fill: #fff;	
+	width: 5%;
+	height:5%;	
+}
+
+#aboutMe {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	padding: 20px;
+	margin-top: 15%;
+	width: 900px;
+	height:250px;
+	color: white;
+	background-image: linear-gradient(to top right, rgba(255,0,0,0), var(--navBoxColor));
+	border-radius: 50px;
+}
+
+#aboutMe > * {
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+#aboutMe li{
+	list-style: none;
+}
+
+#aboutMe h2{
+	font-family: 'EB Garamond', serif;
+	letter-spacing: 1px;
+}
+
+#portfolioPhoto {
+	background-image: 
+		url("../img/myPhoto.jpg");
+	filter: grayscale(100%);		
+	background-size: cover;	
+	width:  250px;
+	height: 250px;
+	border-style: solid;
+	border-width: 50%;
+	border-radius: 50%;
+	border-color: var(--navBoxAccent);	
+}
+
+#linksContainer a{
+	color: white;
+	padding: 5px;
+	text-decoration: underline;
+}
+

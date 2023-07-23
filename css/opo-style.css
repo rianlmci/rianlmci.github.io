@@ -1,0 +1,46 @@
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.toyhouseProfileWrapper 
+{
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	width: 30%;
+	height: 25%;
+	max-width: 507px;
+	max-height: 203px;
+	background-color: red;	
+}
+
+.profileCircleWrapper
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;	
+}
+
+
+
+.profileCircle
+{
+	display: flex;
+	background-image: 
+		/*remove the next line to get rid of the rainbow overlay*/
+		linear-gradient(to bottom left, rgba(255, 0, 0, 0.30), rgba(255, 165, 0, 0.30) , rgba(255, 255, 0, 0.30), rgba(0, 128, 0, 0.30), rgba(0, 0, 255, 0.30), rgba(75, 0, 130, 0.30), rgba(138, 43, 226, 0.30)),
+		url("../img/opo.png");
+	background-position: center;		
+	background-size: cover;
+		/*change 'cover' to 'contain' if your image will not fit. Also, your image should roughly be a square.*/
+	width: 40%;
+	height: 100%;
+	border-style: solid;
+	border-width: 50%;
+	border-radius: 50%;
+	border-color: BlueViolet;	
+}	
+	
+	

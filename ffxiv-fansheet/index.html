@@ -1,0 +1,138 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>WoL Sheet</title>
+		<meta charset="utf-8">
+	    <link rel='stylesheet' type='text/css' href='css/style.css'>
+		<!--minimalist hosting of html2canvas for saving screenshots of the character sheet-->
+		<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/sheetController.js"></script>
+	</head>
+	
+	<body>
+		<div class = "woLSheetWrapper">	<!--Widget Wrapper, will move everything-->
+			<div class = "mainGoldOutlineBox" id="characterSheet"> <!--Fake Gradient boarder-->
+				<div class="mainSheet">
+					
+					<div class= "col" id="1">
+
+						<input type='file' id="characterFile" accept="image/*" hidden="hidden" />
+						<img id="character-picture" src="./img/yshtola.png" alt="Your character's photograph.">
+						<!-- try to make the image a square -->	
+						</img><!--character-picture-->
+
+						<div class="blackBox" id="character-name">
+							<h3 contenteditable="true">Character Name</h3>
+						</div><!--character-name-->	
+						
+						<div class="blackBox" id="title">
+							<h2 contenteditable="true">Title</h2>
+						</div><!--title-->
+						
+						<h3 class="left">From:</h3>
+						<input type='file' id="fromLocFile" accept="image/*" hidden="hidden" />
+						<img class="location-picture" id="from-picture" src="./img/map.png"  alt="Character's place of origin.">
+						<!-- try to make the image a square -->	
+						</img><!--from-picture-->
+						<h3 class="right" contenteditable="true">Location</h3>
+						
+						<h3 class="left">Current:</h3>
+						<input type='file' id="currentLocFile" accept="image/*" hidden="hidden" />
+						<img class="location-picture" id="current-picture" src="./img/map.png"  alt="Character's current location.">
+						<!-- try to make the image a square -->	
+						</img><!--current-picture-->	
+						<h3 class="right" contenteditable="true">Location</h3>
+					
+					</div><!--col-1-->
+					
+					<div class= "col" id="2">
+						
+						<div class="blackBox" id="character-stats">
+							<h3>Stats Parent Box</h3>
+						</div><!--character-stats-->	
+						
+						<h3 class="center">TL;DR Backstory:</h3>
+						<div class="blackBox" id="backstory">
+							<h3 contenteditable="true">
+								- Click on text to edit its value!</br>
+								- Click on the portrait image, or either of the maps to replace it with something from your computer.</br>
+								- Click on the job icon to select a different icon.</br>
+								- Click on the personality bars to edit their values.</br>
+							</h3>	
+						</div><!--backstory-->
+						
+						<div class="blackBox" id="alignment">
+							<h3 contenteditable="true">
+							Alignment
+							</h3>	
+						</div><!--alignment-->
+						
+						<div class="blackBox" id="job-and-class">
+							<h3 contenteditable="true">
+							Job/Class
+							</h3>	
+						</div><!--job-and-class-->
+						
+						
+					</div><!--col-2-->
+					
+					<div class= "col" id="3">
+						<div class="blackBox" id="ibf-parent-box">
+							<h3>
+							Temp Parent Box:
+								<ul>
+									<li>Ideals</li>
+									<li>Bonds</li>
+									<li>Flaws</li>
+								</ul>
+							</h3>
+						</div><!--ibf-parent-box-->
+						
+						<div class="blackBox" id="race">
+							<h3 contenteditable="true">
+							Race
+							</h3>	
+						</div><!--race-->
+						
+						<div class="blackBox" id="age">
+							<h3 contenteditable="true">
+							Age
+							</h3>	
+						</div><!--age-->
+						
+						<div class="blackBox" id="height">
+							<h3 contenteditable="true">
+							Height
+							</h3>	
+						</div><!--height-->
+						
+						<div class="blackBox" id="pronouns">
+							<h3 contenteditable="true">
+							Pronouns
+							</h3>	
+						</div><!--pronouns-->
+						
+						<div class="blackBox" id="sexuality">
+							<h3 contenteditable="true">
+							Sexuality
+							</h3>	
+						</div><!--pronouns-->
+						
+						<div class="blackBox" id="credit-parent-box">
+							<h3>
+							Credit Parent Box
+							</h3>	
+						</div><!--credit-parent-box-->
+						
+					</div><!--col-3-->
+				
+				</div><!--mainSheet-->
+			</div> <!--mainGoldOutlineBox-->
+			<div id="saveWrapper">
+				<button id="btnSave" onclick='getScreenShot()'><p>Save Sheet</p> <p>(Opens New Tab)</p></button>
+			</div>
+		</div> <!--woLSheetWrapper-->
+	</body>
+</html> 
