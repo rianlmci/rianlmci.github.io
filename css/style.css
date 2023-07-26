@@ -89,9 +89,9 @@ body,html {
 	justify-content: center;
 	margin: auto;
 	padding: 2vw;
-	margin-top: 20vh;
-	width: 60vw;
-	height:50vh;
+	margin-top: 50vh;
+	max-width: 60vw;
+	max-height: 50vh;
 	color: white;
 	background-image: linear-gradient(to top right, rgba(255,0,0,0), var(--navBoxColor));
 	border-radius: 50px;
@@ -116,8 +116,10 @@ body,html {
 		url("../img/myPhoto.jpg");
 	filter: grayscale(100%);		
 	background-size: cover;	
-	width:  15vw;
-	height: 50vh;
+	max-width:  250px;
+	max-height: 250px;
+	min-width:  250px;
+	min-height: 250px;
 	border-style: solid;
 	border-width: 5px;
 	border-radius: 50%;
