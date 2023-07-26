@@ -15,11 +15,12 @@
 } 
  
 body,html {
-	margin:0;
-	padding:0;
-	height: 100 vh;
-	width: 100 vw;
+	margin:0px;
+	padding:0px;
+	height: 100vh;
+	width: 100vw;
 	font-family: 'EB Garamond', serif;
+	font-size: 1.25vw;
 	background:repeat;
 	background-image: url("../img/CrystalWhite.png");
 	background-blend-mode: screen;
@@ -44,11 +45,11 @@ body,html {
 .navContainer li {
 	margin-left: auto; 
 	list-style: none;
-	padding: 20px;
+	padding: 2vw;
 	float: right;	
 	background-color: var(--navBoxColor);
 	display: float-right;
-	border-radius: 50px
+	border-radius: 50px;
 }
 
 .navContainer li a{
@@ -86,10 +87,10 @@ body,html {
 	display: flex;
 	justify-content: center;
 	margin: auto;
-	padding: 20px;
-	margin-top: 15%;
-	width: 900px;
-	height:250px;
+	padding: 2vw;
+	margin-top: 20vh;
+	width: 90vw;
+	height: 250px;
 	color: white;
 	background-image: linear-gradient(to top right, rgba(255,0,0,0), var(--navBoxColor));
 	border-radius: 50px;
@@ -117,7 +118,7 @@ body,html {
 	width:  250px;
 	height: 250px;
 	border-style: solid;
-	border-width: 50%;
+	border-width: 5px;
 	border-radius: 50%;
 	border-color: var(--navBoxAccent);	
 }
