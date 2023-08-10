@@ -27,20 +27,23 @@ p, em, li, a{
 }
 	
 
-body {
+body, html { 
 margin: 0;
 padding: 0;	
-height: 100vh;
-width: 100vw;
-background-size: 100% 100%;
-background: linear-gradient(180deg, rgba(153,0,255,1) -75%, rgba(0,0,0,1) 50%, rgba(0,190,169,1) 125%);
+min-width: 1920px;
+min-height: 1080px;
+max-width: 1920px;
+max-height: 1080px;  
+background: linear-gradient(180deg, rgba(153,0,255,1) -75%, rgba(0,0,0,1) 50%, rgba(0,190,169,1) 125%); 
 }
 
-.twitch-layout-blueprint {
-position: absolute;	
-width: 100%;
-height: 100%;
+.twitch-layout-blueprint {  
 background-image: url("../img/glitter-three.gif");
+background-repeat: repeat;
+min-width: 1920px;
+min-height: 1080px; 
+max-width: 1920px;
+max-height: 1080px;    
 }
 
 .chat-container, .media-container, .song-container, .video-container{	
