@@ -16,24 +16,22 @@
 h1, h2, h3, h4, strong{
 	font-family: AlienEncounters;
 	color: #FFF;
-	letter-spacing: 2px; 
-	text-shadow: 2px 2px 3.5px white;
+	letter-spacing: 0.1vw; 
+  font-size: 1vw; 
+	text-shadow: 0.1vw 0.1vw 0.3vw white;
 }
 
 p, em, li, a{
   font-family: 'VT323', monospace;
   color: #FFF;
+  font-size: 0.9vw;
   width: 90%;
 }
 	
 
 body, html { 
 margin: 0;
-padding: 0;	
-min-width: 1920px;
-min-height: 1080px; 
-max-width: 1920px;
-max-height: 1080px;  
+padding: 0;	 
 background: linear-gradient(180deg, rgba(153,0,255,1) -75%, rgba(0,0,0,1) 50%, rgba(0,190,169,1) 125%);
 background-size: cover;  
 }
@@ -41,20 +39,19 @@ background-size: cover;
 .twitch-layout-blueprint {  
 background-image: url("../img/glitter-three.gif");
 background-repeat: repeat;
-min-width: 100vw;
-min-height: 100vh;    
+min-height: 98.8vh;    
 }
 
 .chat-container, .media-container, .song-container, .video-container{	
 border-style: solid;
-border-width: 5px;
+border-width: 0.3vw;
 border-color: #8601a4;
 border-radius: 40px;
 background-color: rgba(0, 0, 0, 0.9);	
 text-align: center;
 box-shadow: 
 0px 0px 
-10px 10px #02ffff;	
+0.5vw 0.5vw #02ffff;	
 }
 
 .chat-container {
