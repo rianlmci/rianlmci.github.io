@@ -1,0 +1,117 @@
+:root {
+  --navBoxAccent: Gray;
+  --navBoxColor: Black;
+  --backgroundSize: 300px;
+}
+
+@font-face { 
+  font-family: 'Roboto'; 
+  src: url('https://fonts.googleapis.com/css2?family=Roboto'); 
+}
+
+@font-face {   
+  font-family: 'EB Garamond'; 
+  src: url('fonts.googleapis.com/css?family=EB+Garamond'); 
+} 
+ 
+body,html {
+	margin:0px;
+	padding:0px;
+	height: 100vh;
+	width: 100vw;
+	font-family: 'EB Garamond', serif;
+	font-size: 1.1vw;
+	background:repeat;
+	background-image: url("../img/CrystalWhite.png");
+	background-blend-mode: screen;
+	background-color: var(--navBoxAccent);
+	background-size: var(--backgroundSize) var(--backgroundSize);
+	animation: scrollingBackground 15s linear infinite;	
+}
+
+@keyframes scrollingBackground {
+	from	{ background-position: 0 0; }
+	to		{ background-position: var(--backgroundSize) var(--backgroundSize); }
+}
+
+.navContainer {
+	width: 98%;
+	color: white;
+	margin-top: 0px;
+	overflow: hidden;
+}
+
+
+.navContainer li {
+	margin: 0.3vw;
+	margin-left: auto;
+	list-style: none;
+	padding: 1vw;
+	float: right;	
+	background-color: var(--navBoxColor);
+	display: float-right;
+	border-radius: 50px;
+}
+
+.navContainer li a{
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 0.5vw;
+}
+
+.navContainer li ul, li.webMenu ul li{
+	display: none;	
+}
+
+.navContainer li:hover ul, li.webMenu:hover ul li{
+	display: flex;
+	flex-direction: column;
+}
+
+.navContainer li:hover ul li:hover{
+	background-color: var(--navBoxAccent);
+}
+
+.webMenu li, .webMenu ul, .webMenu ul li{
+	border-radius: 50px;
+	background-color: var(--navBoxAccent);
+}
+
+#videoContainer {
+	margin: auto;
+	min-width: 70%;
+	min-height: 60%
+}
+
+#videoContainer {
+	 border-collapse: separate;
+	 border-spacing: 2vh 5vh;
+}
+
+#videoContainer td {
+	color: white;
+	text-align: center;
+	background-image: linear-gradient(to top right, rgba(255,0,0,0), var(--navBoxColor));
+	border-radius: 2vw;
+	padding: 5vh;
+}
+
+#videoContainer> * {
+	font-family: 'Roboto', sans-serif;
+}
+
+#videoContainer iframe {
+	width: 640px;
+	height: 480px;	
+}
+
+#videoContainer a {
+	color: white;
+	padding: 5px;
+	text-decoration: underline;
+}
+
+.mediaIcon{
+	fill: #fff;		
+}
