@@ -132,7 +132,7 @@ body,html {
 
 #linksContainer a{
 	color: white;
-	padding: 5px;
+	padding-top: 5px;
 	text-decoration: underline;
 }
 
