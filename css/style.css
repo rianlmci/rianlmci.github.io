@@ -20,7 +20,7 @@ body,html {
 	height: 100vh;
 	width: 100vw;
 	font-family: 'EB Garamond', serif;
-	font-size: 1.1vw;
+	font-size: 4vh;
 	background:repeat;
 	background-image: url("../img/CrystalWhite.png");
 	background-blend-mode: screen;
@@ -37,6 +37,9 @@ body,html {
 .navContainer {
 	width: 98%;
 	color: white;
+	background-color: var(--navBoxColor);
+	font-family: 'EB Garamond', serif;
+	font-size: 3vh;
 	margin-top: 0px;
 	overflow: hidden;
 }
@@ -70,12 +73,12 @@ body,html {
 }
 
 .navContainer li:hover ul li:hover{
-	background-color: var(--navBoxAccent);
+	/*background-color: var(--navBoxAccent);*/
 }
 
 .webMenu li, .webMenu ul, .webMenu ul li{
 	border-radius: 50px;
-	background-color: var(--navBoxAccent);
+	/*background-color: var(--navBoxAccent);*/
 }
 
 .mediaIcon{
@@ -88,12 +91,13 @@ body,html {
 	display: flex;
 	justify-content: center;
 	margin: auto;
-	padding: 2vw;
+	padding: 2vh;
 	margin-top: 50vh;
-	max-width: 60vw;
+	max-width: 60vh;
 	max-height: 50vh;
 	color: white;
 	background-image: linear-gradient(to top right, rgba(255,0,0,0), var(--navBoxColor));
+	font-size: 50%;
 	border-radius: 50px;
 }
 
@@ -127,6 +131,46 @@ body,html {
 }
 
 #linksContainer a{
+	color: white;
+	padding: 5px;
+	text-decoration: underline;
+}
+
+#videoContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	min-width: 70%;
+	min-height: 60%
+	
+}
+
+#videoContainer {
+	 border-collapse: separate;
+	 border-spacing: 2vh 5vh;
+}
+
+#videoContainer .video{
+	color: white;
+	text-align: center;
+	border-radius: 2vw;
+	margin: 2vh;
+	padding: 5vh;
+	background-image: linear-gradient(to top left, rgba(255,0,0,0), var(--navBoxColor));
+}
+
+#videoContainer> * {
+	font-family: 'Roboto', sans-serif;
+}
+
+#videoContainer iframe {
+	width: 640px;
+	height: 480px;	
+}
+
+#videoContainer a {
 	color: white;
 	padding: 5px;
 	text-decoration: underline;
