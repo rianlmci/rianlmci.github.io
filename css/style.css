@@ -41,6 +41,7 @@ body,html {
 	font-family: 'EB Garamond', serif;
 	font-size: 3vh;
 	margin-top: 0px;
+	margin-bottom: 0px;
 	overflow: hidden;
 }
 
@@ -88,19 +89,15 @@ body,html {
 }
 
 #aboutMe {
-	/*border-radius: 2vw;*/
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	margin: auto;
 	padding: 2vh;
-	/*margin-top: 50vh;*/
-	max-width: 60vh;
 	max-height: 50vh;
 	color: white;
-	background-image: linear-gradient(to top right, rgba(255,0,0,0), var(--navBoxColor));
+	background-image: linear-gradient(to top, rgba(255,0,0,0), var(--navBoxColor));
 	font-size: 50%;
-	border-radius: 50px;
+	/*border-radius: 50px;*/
 }
 
 #aboutMe > * {
@@ -160,7 +157,7 @@ body,html {
 	border-radius: 2vw;
 	margin: 2vh;
 	padding: 5vh;
-	background-image: linear-gradient(to top left, rgba(255,0,0,0), var(--navBoxColor));
+	background-image: linear-gradient(to top, rgba(255,0,0,0), var(--navBoxColor));
 }
 
 #videoContainer> * {
