@@ -88,6 +88,8 @@ body,html {
 }
 
 #aboutMe {
+	/*border-radius: 2vw;*/
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	margin: auto;
