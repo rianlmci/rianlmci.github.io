@@ -160,8 +160,13 @@ body,html {
 	background-image: linear-gradient(to top, rgba(255,0,0,0), var(--navBoxColor));
 }
 
-#videoContainer> * {
+#videoContainer > * {
 	font-family: 'Roboto', sans-serif;
+}
+
+#videoContainer h3{
+	font-family: 'EB Garamond', serif;
+	text-decoration: underline;
 }
 
 #videoContainer iframe {
