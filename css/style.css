@@ -20,14 +20,15 @@ body,html {
 	height: 100vh;
 	width: 100vw;
 	font-family: 'EB Garamond', serif;
-	font-size: 5vh;
+	font-size: 3vh;
 	background:repeat;
 	background-image: url("../img/CrystalWhite.png");
 	background-blend-mode: screen;
 	background-color: var(--navBoxAccent);
 	background-size: var(--backgroundSize) var(--backgroundSize);
-	animation: scrollingBackground 15s linear infinite;	
-}
+	animation: scrollingBackground 15s linear infinite;
+}	
+
 
 
 @keyframes scrollingBackground {
@@ -73,9 +74,9 @@ body,html {
 }
 
 .mediaIcon{
-	fill: #fff;	
-	width: 5vw;
-	height:5vh;	
+	fill: black;	
+	width: 3vw;
+	height:3vh;	
 }
 
 #aboutMe {
@@ -140,7 +141,7 @@ body,html {
 }
 
 #videoContainer .video{
-	color: white;
+	color: black;
 	text-align: center;
 	border-radius: 2vw;
 	margin: 2vh;
@@ -163,7 +164,7 @@ body,html {
 }
 
 #videoContainer a {
-	color: white;
+	color: black;
 	padding: 5px;
 	text-decoration: underline;
 }
