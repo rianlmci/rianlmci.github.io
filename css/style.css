@@ -20,7 +20,7 @@ body,html {
 	height: 100vh;
 	width: 100vw;
 	font-family: 'EB Garamond', serif;
-	font-size: 4vh;
+	font-size: 5vh;
 	background:repeat;
 	background-image: url("../img/CrystalWhite.png");
 	background-blend-mode: screen;
@@ -74,8 +74,8 @@ body,html {
 
 .mediaIcon{
 	fill: #fff;	
-	width: 3%;
-	height:3%;	
+	width: 5vw;
+	height:5vh;	
 }
 
 #aboutMe {
@@ -85,8 +85,7 @@ body,html {
 	max-height: 50vh;
 	color: white;
 	background-image: linear-gradient(to top, rgba(255,0,0,0), var(--navBoxColor));
-	font-size: 50%;
-	/*border-radius: 50px;*/
+	font-size: 2vh;
 }
 
 #aboutMe > * {
