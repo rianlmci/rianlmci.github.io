@@ -29,19 +29,24 @@ body,html {
 	animation: scrollingBackground 15s linear infinite;	
 }
 
+nav
+{
+	margin:0px;
+	padding:0px;
+}
+
 @keyframes scrollingBackground {
 	from	{ background-position: 0 0; }
 	to		{ background-position: var(--backgroundSize) var(--backgroundSize); }
 }
 
 .navContainer {
-	width: 98%;
+	width: 100vw;
 	color: white;
 	background-color: var(--navBoxColor);
 	font-family: 'EB Garamond', serif;
 	font-size: 3vh;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin: 0%;
 	overflow: hidden;
 }
 
@@ -49,11 +54,12 @@ body,html {
 .navContainer li {
 	margin: 0.3vw;
 	margin-left: auto;
+	margin-right: 5%;
 	list-style: none;
 	padding: 1vw;
 	float: right;	
 	background-color: var(--navBoxColor);
-	display: float-right;
+	
 	border-radius: 50px;
 }
 
