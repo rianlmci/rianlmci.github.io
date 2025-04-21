@@ -46,6 +46,10 @@ body,html {
 	overflow: hidden;
 }
 
+.navContainer .mediaIcon{
+	fill: white;
+}
+
 
 .navContainer li {
 
