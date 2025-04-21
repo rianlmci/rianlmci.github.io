@@ -29,11 +29,6 @@ body,html {
 	animation: scrollingBackground 15s linear infinite;	
 }
 
-nav
-{
-	margin:0px;
-	padding:0px;
-}
 
 @keyframes scrollingBackground {
 	from	{ background-position: 0 0; }
@@ -41,20 +36,18 @@ nav
 }
 
 .navContainer {
-	width: 100vw;
+	margin:0px;
+	padding:0px;
 	color: white;
 	background-color: var(--navBoxColor);
 	font-family: 'EB Garamond', serif;
 	font-size: 3vh;
-	margin: 0%;
 	overflow: hidden;
 }
 
 
 .navContainer li {
-	margin: 0.3vw;
-	margin-left: auto;
-	margin-right: 5%;
+
 	list-style: none;
 	padding: 1vw;
 	float: right;	
@@ -79,15 +72,6 @@ nav
 	flex-direction: column;
 }
 
-.navContainer li:hover ul li:hover{
-	/*background-color: var(--navBoxAccent);*/
-}
-
-.webMenu li, .webMenu ul, .webMenu ul li{
-	border-radius: 50px;
-	/*background-color: var(--navBoxAccent);*/
-}
-
 .mediaIcon{
 	fill: #fff;	
 	width: 5%;
@@ -98,7 +82,6 @@ nav
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	padding: 2vh;
 	max-height: 50vh;
 	color: white;
 	background-image: linear-gradient(to top, rgba(255,0,0,0), var(--navBoxColor));
