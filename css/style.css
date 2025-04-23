@@ -46,13 +46,6 @@ body,html {
 	overflow: hidden;
 }
 
-.navContainer .mediaIcon{
-	fill: white;
-	margin: 0px;
-	padding: 0px;
-}
-
-
 .navContainer li {
 
 	list-style: none;
@@ -81,7 +74,7 @@ body,html {
 }
 
 .mediaIcon{
-	fill: black;	
+	fill: white;	
 	width: 3vw;
 	height:3vh;	
 }
@@ -148,12 +141,13 @@ body,html {
 }
 
 #videoContainer .video{
-	color: black;
+	color: white;
 	text-align: center;
 	border-radius: 2vw;
 	margin: 2vh;
 	padding: 5vh;
-	background-image: linear-gradient(to top, rgba(255,0,0,0), var(--navBoxColor));
+	background-color: black;
+	/*background-image: linear-gradient(to top, rgba(255,0,0,0), var(--navBoxColor));*/
 }
 
 #videoContainer > * {
@@ -171,7 +165,7 @@ body,html {
 }
 
 #videoContainer a {
-	color: black;
+	color: white;
 	padding: 5px;
 	text-decoration: underline;
 }
