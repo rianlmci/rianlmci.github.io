@@ -101,6 +101,8 @@ body,html {
 #aboutMe h2{
 	font-family: 'EB Garamond', serif;
 	letter-spacing: 1px;
+	text-align: left;
+	text-decoration: none;
 }
 
 #portfolioPhoto {
@@ -126,7 +128,7 @@ body,html {
 
 #videoContainer {
 	display: flex;
-	flex-direction: column;
+	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
 	margin: auto;
@@ -146,7 +148,7 @@ body,html {
 	border-radius: 2vw;
 	margin: 2vh;
 	padding: 5vh;
-	background-color: black;
+	background-color: var(--navBoxColor);
 	/*background-image: linear-gradient(to top, rgba(255,0,0,0), var(--navBoxColor));*/
 }
 
@@ -154,7 +156,9 @@ body,html {
 	font-family: 'Roboto', sans-serif;
 }
 
-#videoContainer h3{
+h2{
+	margin: auto;
+	text-align: center;
 	font-family: 'EB Garamond', serif;
 	text-decoration: underline;
 }
